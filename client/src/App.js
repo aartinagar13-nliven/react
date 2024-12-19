@@ -6,7 +6,7 @@ import SelfRegistration from './components/SelfRegistration';
 import Enquiry from './components/Enquiry';
 import DCVSContract from './artifacts/DCVS.json';
 const App = ({ provider }) => {
-    const contractAddress = 'YOUR_CONTRACT_ADDRESS'; // Replace with your deployed contract address
+    const contractAddress = '0x627306090abab3a6e1400e9345bc60c78a8bef57'; // Replace with your deployed contract address
     const contract = new ethers.Contract(contractAddress, DCVSContract.abi, provider.getSigner());
     return (
         <Router>
